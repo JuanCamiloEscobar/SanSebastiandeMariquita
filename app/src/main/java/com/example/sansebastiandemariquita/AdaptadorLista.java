@@ -41,14 +41,13 @@ public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.viewHold
 
     public class viewHolder extends RecyclerView.ViewHolder {
 
-        TextView actividadTuristica,edades;
+        TextView actividadTuristica;
         ImageView imagenActividad;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             actividadTuristica=itemView.findViewById(R.id.nombreActividad);
             imagenActividad=itemView.findViewById(R.id.imagenActividad);
-            edades=itemView.findViewById(R.id.edadesMain);
 
         }
 
@@ -56,12 +55,11 @@ public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.viewHold
 
             actividadTuristica.setText(datos.getNombreActividad());
             imagenActividad.setImageResource(datos.getFotoActividad());
-            edades.setText(datos.getEdades());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent= new Intent(itemView.getContext(), MainActivity.class);
+                    Intent intent= new Intent(itemView.getContext(),MainActivity.class);
                     intent.putExtra("actividadTuristica",datos);
                     itemView.getContext().startActivity(intent);
                 }

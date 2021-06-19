@@ -29,11 +29,16 @@ public class MainActivity extends AppCompatActivity {
         petfriend=findViewById(R.id.petfriendMain);
         aforo=findViewById(R.id.aforoMain);
         descripcion=findViewById(R.id.descripcionMain);
+        image=findViewById(R.id.imageMain);
 
         actividadTuristica=(ActividadTuristica) getIntent().getSerializableExtra("actividadTuristica");
 
         titulo.setText(actividadTuristica.getNombreActividad());
         image.setImageResource(actividadTuristica.getFotoActividad());
-
+        edades.setText(actividadTuristica.getEdades());
+        duracion.setText(actividadTuristica.getDuracion());
+        petfriend.setText(actividadTuristica.getPetfriend());
+        aforo.setText(actividadTuristica.getAforo());
+        descripcion.setText(actividadTuristica.getDescripcion());
     }
 }

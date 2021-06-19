@@ -7,10 +7,14 @@ public class ActividadTuristica implements Serializable {
     String nombreActividad, edades, duracion, petfriend, aforo, descripcion;
     int fotoActividad;
 
-    public ActividadTuristica(String nombreActividad,String edades, int fotoActividad) {
+    public ActividadTuristica(String nombreActividad, String edades, String duracion, String petfriend, String aforo, String descripcion, int fotoActividad) {
         this.nombreActividad = nombreActividad;
-        this.fotoActividad = fotoActividad;
         this.edades = edades;
+        this.duracion = duracion;
+        this.petfriend = petfriend;
+        this.aforo = aforo;
+        this.descripcion = descripcion;
+        this.fotoActividad = fotoActividad;
     }
 
     public String getNombreActividad() {
@@ -29,6 +33,38 @@ public class ActividadTuristica implements Serializable {
         this.edades = edades;
     }
 
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+
+    public String getPetfriend() {
+        return petfriend;
+    }
+
+    public void setPetfriend(String petfriend) {
+        this.petfriend = petfriend;
+    }
+
+    public String getAforo() {
+        return aforo;
+    }
+
+    public void setAforo(String aforo) {
+        this.aforo = aforo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public int getFotoActividad() {
         return fotoActividad;
     }
@@ -36,6 +72,4 @@ public class ActividadTuristica implements Serializable {
     public void setFotoActividad(int fotoActividad) {
         this.fotoActividad = fotoActividad;
     }
-
-
 }
