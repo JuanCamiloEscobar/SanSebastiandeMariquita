@@ -4,16 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mkitabosque"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tituloMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Titulo"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/edadesMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edades permitidas"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMain"
+        app:layout_constraintTop_toBottomOf="@+id/tituloMain"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/duracionMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duracion Actividad"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMain"
+        app:layout_constraintTop_toBottomOf="@+id/edadesMain"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/petfriendMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PetFiends"
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMain"
+        app:layout_constraintTop_toBottomOf="@+id/duracionMain"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/aforoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aforo"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMain"
+        app:layout_constraintTop_toBottomOf="@+id/petfriendMain"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:src="@drawable/iglesia"
+        android:layout_width="230dp"
+        android:layout_height="250dp"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/descripcionMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Descripcion de actividad turistica "
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMain"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
