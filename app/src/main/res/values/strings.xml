@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">San Sebastian de Mariquita</string>
-    <string name="vermas">Ver +</string>
+    <string name="vermas">Ver Mas+</string>
+
+    <string name="opcion2">Español</string>
+    <string name="opcion1">Ingles</string>
+
 </resources>

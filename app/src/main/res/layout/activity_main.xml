@@ -66,6 +66,7 @@
         android:src="@drawable/iglesia"
         android:layout_width="230dp"
         android:layout_height="250dp"
+        android:adjustViewBounds="true"
         app:layout_constraintVertical_bias="0.03"
         app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintTop_toTopOf="parent"

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736652776921",
+    "project_id": "tienda-b1f94",
+    "storage_bucket": "tienda-b1f94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736652776921:android:c646e8f684b70b6e27f5c8",
+        "android_client_info": {
+          "package_name": "com.example.sansebastiandemariquita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736652776921-srjtj6c3m6qjajtd39eecetvt4fre2kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOHDwi5W4eSFwLo5M00Qk6zOg8zaOKVtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736652776921-srjtj6c3m6qjajtd39eecetvt4fre2kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

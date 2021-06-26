@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         actividadTuristica=(ActividadTuristica) getIntent().getSerializableExtra("actividadTuristica");
 
         titulo.setText(actividadTuristica.getNombreActividad());
-        image.setImageResource(actividadTuristica.getFotoActividad());
+        Picasso.get()
+                .load(actividadTuristica.getFotoActividad())
+                .into(image);
         edades.setText(actividadTuristica.getEdades());
         duracion.setText(actividadTuristica.getDuracion());
         petfriend.setText(actividadTuristica.getPetfriend());

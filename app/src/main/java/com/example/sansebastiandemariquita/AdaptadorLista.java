@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.viewHolder> {
@@ -54,7 +56,9 @@ public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.viewHold
         public void actualizarDatosItem(ActividadTuristica datos) {
 
             actividadTuristica.setText(datos.getNombreActividad());
-            imagenActividad.setImageResource(datos.getFotoActividad());
+            Picasso.get()
+                    .load(datos.getFotoActividad())
+                    .into(imagenActividad);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
